@@ -23,12 +23,5 @@ const calculateDistancePoints = require('./calculateDistancePoints');
 
             assert.equal(actual, expected);
         });
-        it('should return 0 if value is error', () => {
-            const actual = calculateDistancePoints(-215, 225, 200);
-
-            const expected = 0;
-
-            assert.equal(actual, expected);
-        });
 
     });

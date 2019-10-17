@@ -4,7 +4,7 @@
   "description": "unit tests",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js -b",
+    "test": "mocha *.test.js -b",
     "test:watch": "onchange \"./*.js\" -- npm test"
   },
   "keywords": [
