@@ -4,11 +4,16 @@
   "description": "unit tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha index.test.js -b",
+    "test:watch": "onchange \"./*.js\" -- npm test"
   },
   "keywords": [
     "tests"
   ],
   "author": "Paulina",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.2.1",
+    "onchange": "^6.1.0"
+  }
 }
